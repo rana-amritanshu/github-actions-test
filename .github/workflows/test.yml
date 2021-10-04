@@ -14,4 +14,4 @@ jobs:
     steps:
       - run: | 
         echo ${{ github.event.ref }} \
-          echo ${{ github.event.ref_type }}
+          echo ${{ github.event.ref_type }} \
