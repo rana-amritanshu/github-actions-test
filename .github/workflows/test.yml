@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: | 
-        echo ${{ github.event.ref }} \
-        echo ${{ github.event.ref_type }} \
+          echo ${{ github.event.ref }} \
+            echo ${{ github.event.ref_type }} \
       - run: echo Done
