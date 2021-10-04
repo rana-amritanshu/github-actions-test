@@ -12,6 +12,8 @@ jobs:
     name: 'Tags processing'
     runs-on: ubuntu-latest
     steps:
-      - run: | 
-          echo ${{ toJson(github) }} \
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - run: echo Done
