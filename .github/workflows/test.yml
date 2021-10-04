@@ -12,6 +12,6 @@ jobs:
     name: 'Tags processing'
     runs-on: ubuntu-latest
     steps:
-      - run : | 
+      - run: | 
         echo ${{ github.event.ref }} \
-        echo ${{ github.event.ref_type }}
+          echo ${{ github.event.ref_type }}
